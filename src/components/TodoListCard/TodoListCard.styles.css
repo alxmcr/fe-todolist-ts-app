@@ -1,0 +1,44 @@
+.todolist {
+  background-color: #e3e9f0;
+  border-radius: 0.5rem;
+  height: 26rem;
+  width: 20rem;
+}
+
+.todolist__body {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* height: 14.5rem;
+  overflow: auto; */
+}
+
+.todolist__day {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.todolist__header {
+  background-color: #ff1f5b;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.todolist__nameday {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.todolist__body,
+.todolist__footer,
+.todolist__header {
+  padding: 1.5rem 0.5rem;
+}

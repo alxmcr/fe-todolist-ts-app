@@ -1,5 +1,6 @@
 import { Todo, TodoType } from "components/Todo";
 import { useTodos } from "hooks/useTodos";
+import './TodoList.styles.css';
 
 export const TodoList = () => {
     const { todos, isLoading, error } = useTodos();
@@ -9,12 +10,12 @@ export const TodoList = () => {
     if (todos?.length === 0) return <p>Todo list is empty</p>
 
     return (
-        <div>
+        <>
             {
                 todos.map((todo: TodoType) => (
                     <Todo todo={todo} key={todo.id} />
                 ))
             }
-        </div>
+        </>
     )
 }

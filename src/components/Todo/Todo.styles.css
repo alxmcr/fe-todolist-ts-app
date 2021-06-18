@@ -1,0 +1,16 @@
+.todolist__icon {
+  color: #ff1f5b;
+  font-size: 1.75rem;
+}
+
+.todolist__todo {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 4rem;
+  justify-content: flex-start;
+  padding: 1.5rem 0.5rem;
+}

@@ -23,6 +23,21 @@ export function useTodos(): ICustomTodoProps {
             {
                 id: 2,
                 text: "Buy a notebook",
+                isDone: true,
+            },
+            {
+                id: 3,
+                text: "Read a book",
+                isDone: false,
+            },
+            {
+                id: 4,
+                text: "Visit to my mom",
+                isDone: false,
+            },
+            {
+                id: 5,
+                text: "Go to stadium",
                 isDone: false,
             }
         ]
