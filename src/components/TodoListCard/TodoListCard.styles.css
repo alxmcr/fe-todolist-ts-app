@@ -1,23 +1,56 @@
 .todolist {
   background-color: #e3e9f0;
   border-radius: 0.5rem;
-  height: 26rem;
-  width: 20rem;
+  height: 33rem;
+  width: 24rem;
 }
 
 .todolist__body {
-  background-color: aquamarine;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  /* height: 14.5rem;
-  overflow: auto; */
+  height: 14.5rem;
+  overflow: auto;
+}
+
+.todolist__body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px #ff1f5b;
+  background-color: #f5f5f5;
+}
+
+.todolist__body::-webkit-scrollbar {
+  height: 4px;
+  width: 3px;
+  background-color: #f5f5f5;
+}
+
+.todolist__body::-webkit-scrollbar-thumb {
+  background-color: #ff1f5b;
+}
+
+.todolist__button {
+  appearance: none;
+  background-color: #ff1f5b;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
 }
 
 .todolist__day {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin: 0;
+}
+
+.todolist__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .todolist__header {
@@ -32,6 +65,21 @@
   width: 100%;
 }
 
+.todolist__input {
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+.todolist__input:focus {
+  border: 1px solid #ff1f5b;
+}
+
+.todolist__button,
+.todolist__input {
+  padding: 1rem 0.5rem;
+}
+
 .todolist__nameday {
   font-size: 1.1rem;
   margin: 0;
@@ -40,5 +88,5 @@
 .todolist__body,
 .todolist__footer,
 .todolist__header {
-  padding: 1.5rem 0.5rem;
+  padding: 1.5rem 0.85rem;
 }

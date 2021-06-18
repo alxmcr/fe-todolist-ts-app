@@ -5,9 +5,12 @@
 ::before {
   box-sizing: border-box;
 }
+
 html {
   font-size: 13px;
+  scroll-behavior: smooth;
 }
+
 body {
   align-items: center;
   background: #9098ad;
