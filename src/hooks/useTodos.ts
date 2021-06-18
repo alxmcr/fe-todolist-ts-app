@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import { TodoType } from "../components/Todo";
-
-export interface ICustomTodoProps {
-    todos: TodoType[],
-    isLoading: boolean,
-    error: Error | null
-}
+import { ICustomTodoProps, TodoType } from "types/types";
 
 export function useTodos(): ICustomTodoProps {
     const [todos, setTodos] = useState<TodoType[]>([])

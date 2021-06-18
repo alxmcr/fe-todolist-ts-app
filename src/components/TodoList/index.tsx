@@ -1,5 +1,6 @@
-import { Todo, TodoType } from "components/Todo";
+import { Todo } from "components/Todo";
 import { useTodos } from "hooks/useTodos";
+import { TodoType } from "types/types";
 import './TodoList.styles.css';
 
 export const TodoList = () => {
