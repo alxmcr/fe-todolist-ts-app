@@ -13,10 +13,10 @@ export const TodoListCard = () => {
                 <p className="todolist__nameday">Friday</p>
             </div>
             <div className="todolist__body">
-                <TodoList />
+                <TodoList todos={state.todos} dispatch={dispatch} />
             </div>
             <div className="todolist__footer">
-                <TodoForm />
+                <TodoForm dispatch={dispatch} />
             </div>
         </div>
     )

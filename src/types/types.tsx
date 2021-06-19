@@ -1,3 +1,5 @@
+import { ACTION_TYPES } from "reducers";
+
 export interface ITodoType {
     id: number,
     text: string,
@@ -15,5 +17,15 @@ export interface ITodosState {
 }
 
 export interface TodoProps {
-    todo: ITodoType
+    todo: ITodoType,
+    dispatch: React.Dispatch<ACTION_TYPES>
+}
+
+export interface TodoListProps {
+    todos: ITodoType[],
+    dispatch: React.Dispatch<ACTION_TYPES>
+}
+
+export interface TodoFormProps {
+    dispatch: React.Dispatch<ACTION_TYPES>
 }

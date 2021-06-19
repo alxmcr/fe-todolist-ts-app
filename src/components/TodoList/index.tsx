@@ -1,20 +1,17 @@
 import { Todo } from "components/Todo";
-import { useTodos } from "hooks/useTodos";
-import { ITodoType } from "types/types";
+import { ITodoType, TodoListProps } from "types/types";
 import './TodoList.styles.css';
 
-export const TodoList = () => {
-    const { todos, isLoading, error } = useTodos();
-
-    if (isLoading) return <p>Loading...</p>
-    if (error !== null) return <p>There was an error...</p>
+export const TodoList = (
+    { todos, dispatch }: TodoListProps,
+) => {
     if (todos?.length === 0) return <p>Todo list is empty</p>
 
     return (
         <>
             {
                 todos.map((todo: ITodoType) => (
-                    <Todo todo={todo} key={todo.id} />
+                    <Todo key={todo.id} todo={todo} dispatch={dispatch} />
                 ))
             }
         </>
