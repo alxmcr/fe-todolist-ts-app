@@ -1,6 +1,6 @@
 import { Todo } from "components/Todo";
 import { useTodos } from "hooks/useTodos";
-import { TodoType } from "types/types";
+import { ITodoType } from "types/types";
 import './TodoList.styles.css';
 
 export const TodoList = () => {
@@ -13,7 +13,7 @@ export const TodoList = () => {
     return (
         <>
             {
-                todos.map((todo: TodoType) => (
+                todos.map((todo: ITodoType) => (
                     <Todo todo={todo} key={todo.id} />
                 ))
             }

@@ -1,8 +1,11 @@
 import { TodoForm } from "components/TodoForm";
 import { TodoList } from "components/TodoList";
+import { useReducer } from "react";
+import { initialTodoListState, todoReducer } from "reducers";
 import './TodoListCard.styles.css';
 
 export const TodoListCard = () => {
+    const [state, dispatch] = useReducer(todoReducer, initialTodoListState);
     return (
         <div className="todolist">
             <div className="todolist__header">

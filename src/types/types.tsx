@@ -1,15 +1,19 @@
-export interface ICustomTodoProps {
-    todos: TodoType[],
-    isLoading: boolean,
-    error: Error | null
-}
-
-export type TodoType = {
+export interface ITodoType {
     id: number,
     text: string,
     isDone: boolean
 }
 
-export type TodoProps = {
-    todo: TodoType
+export interface ICustomTodoProps {
+    todos: ITodoType[],
+    isLoading: boolean,
+    error: Error | null
+}
+
+export interface ITodosState {
+    todos: ITodoType[],
+}
+
+export interface TodoProps {
+    todo: ITodoType
 }
