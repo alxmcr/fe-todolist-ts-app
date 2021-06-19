@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import { ICustomTodoProps, TodoType } from "types/types";
+import { ICustomTodoProps, ITodoType } from "types/types";
 
 export function useTodos(): ICustomTodoProps {
-    const [todos, setTodos] = useState<TodoType[]>([])
+    const [todos, setTodos] = useState<ITodoType[]>([])
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<Error | null>(null)
 
     useEffect(() => {
         setIsLoading(true);
-        const todosList: TodoType[] = [
+        const todosList: ITodoType[] = [
             {
                 id: 1,
                 text: "Go to dentist",
