@@ -6,7 +6,7 @@ export const TodoForm = ({ dispatch }: TodoFormProps) => {
     const [text, setText] = useState<string>("");
     const handlerText = (e: React.ChangeEvent<HTMLInputElement>) => setText(e.target.value)
 
-    const handlerAddItem = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handlerAddItem = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const randomId = Math.floor(Math.random() * 1000);
         const payload = { id: randomId, isDone: false, text };
@@ -14,7 +14,7 @@ export const TodoForm = ({ dispatch }: TodoFormProps) => {
         setText("")
     }
     return (
-        <form className="todolist__form">
+        <form className="todolist__form" onSubmit={handlerAddItem}>
             <label htmlFor="text">Description:</label>
             <input type="text"
                 className="todolist__input"
@@ -25,7 +25,7 @@ export const TodoForm = ({ dispatch }: TodoFormProps) => {
                 value={text}
                 onChange={handlerText}
             />
-            <button type="submit" className="todolist__button" onClick={handlerAddItem}>
+            <button type="submit" className="todolist__button">
                 <i className="fas fa-plus todolist__icon--plus"></i>
                 <span className="todolist__btntext">ADD NEW</span>
             </button>
