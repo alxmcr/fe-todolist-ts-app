@@ -29,10 +29,11 @@ export const todoReducer = (state: ITodosState, action: ACTION_TYPES) => {
             }
         case "toggle":
             const todosUpdated = state.todos.map(item => {
-                if (item.id === action.payload.id) {
-                    item.isDone = !item.isDone;
+                const copyItem = { ...item }
+                if (copyItem.id === action.payload.id) {
+                    copyItem.isDone = !item.isDone;
                 }
-                return item;
+                return copyItem;
             })
             return {
                 ...state,

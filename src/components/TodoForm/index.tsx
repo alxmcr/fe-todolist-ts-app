@@ -11,6 +11,7 @@ export const TodoForm = ({ dispatch }: TodoFormProps) => {
         const randomId = Math.floor(Math.random() * 1000);
         const payload = { id: randomId, isDone: false, text };
         dispatch({ type: "add", payload })
+        setText("")
     }
     return (
         <form className="todolist__form">
@@ -20,6 +21,7 @@ export const TodoForm = ({ dispatch }: TodoFormProps) => {
                 placeholder="Enter the task's description"
                 id="text"
                 name="text"
+                required={true}
                 value={text}
                 onChange={handlerText}
             />
