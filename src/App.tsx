@@ -3,7 +3,10 @@ import './App.css';
 
 function App() {
   return (
-    <TodoListCard />
+    <>
+      <TodoListCard />
+      <small>Icons by Font-Aweasome, and favicon by Adri Ansyah.</small>
+    </>
   );
 }
 

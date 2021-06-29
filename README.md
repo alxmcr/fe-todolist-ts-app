@@ -9,7 +9,7 @@ This tool wants to help to people save your contacts and search them.
 
 ## Lessons Learned
 
-I learned and practice more about CSS Flex Layout, React.js, React Hooks, and Typescript.
+I learned and practice more about CSS Flex Layout, React.js, React Hooks (`useState`, `useEffect`, `useReducer`), and Typescript.
 
 ## Run Locally
 
