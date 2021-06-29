@@ -1,6 +1,6 @@
 # To-do list App
 
-This tool wants to help to people save your contacts and search them.
+This tool wants to help to people keep organized, register your daily tasks or activities.
 
 ## Features
 
