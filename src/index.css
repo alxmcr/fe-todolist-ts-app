@@ -13,14 +13,14 @@ html {
 
 body {
   align-items: center;
-  background: #9098ad;
+  background: #bec4d4;
   display: flex;
   color: #1c160f;
   flex-direction: row;
   font-family: "Open Sans", sans-serif;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 0 0.5rem;
   width: 100%;
 }
